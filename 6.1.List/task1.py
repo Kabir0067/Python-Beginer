@@ -1,0 +1,5 @@
+my_list=input().split()
+maxx = max(my_list)
+max = my_list.index(maxx)
+print(maxx)
+print( max)

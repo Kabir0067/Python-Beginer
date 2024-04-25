@@ -1,0 +1,5 @@
+my_list=input().split()
+res=''.join(my_list)
+print(my_list)
+print('_'*50)
+print(res)
