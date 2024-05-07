@@ -1,0 +1,9 @@
+def edge (num1,num2):
+    res=num1+num2-1
+    return f'next_edge({num1},{num2}) ---> ({res})'
+
+while True:
+    a=int(input())
+    b=int(input())
+    print(edge(a,b))
+    
