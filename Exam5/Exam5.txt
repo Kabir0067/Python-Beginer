@@ -1,0 +1,240 @@
+1 Question
+Дар бораи рекурсия нависед.
+Ҷавоб:
+Рекурсия Функсияе мебошад,ки мо он функсияро дар дохили худаш фарёд мекнуем, ва мо бояд шарти 
+тамомшавии онро муаян кунем, агар муаян накунем он тақрибан 996 бор ба мисли фор давр мезанад ва
+баъд корашро тамом мекунад.
+
+___________________________________________________________________________________________________
+
+
+2 Question
+Closure(Замыкания) - ро бо мисолҳо фаҳмонед.
+Ҷавоб:
+Калузория функсияе мебошад ки мо дар дохили функсия метавонем боз функсия созем.
+мисол:
+___________________________________________________________________________________________________
+3 Question
+Контейнерҳоро ба хотир оварда онҳоро нависед.
+Ҷавоб:
+контейнерҳо "Лист, дикшинери,тупл"
+фарқияти лист аз дикшинери дар он аст ки лист ном,индекс ва элемент дорад ва бо [] ишорат мешавад
+дикшинери бошад ном дорад ба ҷои индекс кей дорад ва вейлю дорад ва бо {} ишорат мешавад. фарқияти
+тупл бошад аз инҳо дар он аст ки ивазнашаванда аст индекс дорад элемент дорад ва () ишора мешавад.
+
+___________________________________________________________________________________________________
+
+4 Question
+Дар бораи lambda expression ва list comprehension нависед.
+Ҷавоб:
+lambda expression ин функсияе мебошад ки мо онро дар як рах код менависем.
+list comprehension ба методе мебошад ки онро дар як хат код менависем.
+
+___________________________________________________________________________________________________
+5 Question
+Кадом методҳои модули datetime ва randome - ро медонед. Бо мисолҳо фаҳмонед.
+Ҷавоб:
+choice,choices,random,randrange
+___________________________________________________________________________________________________
+
+1 Task
+Write a Python program to insert an element at a specified position into a given list. 
+Напишите программу Python для вставки элемента в указанную позицию в заданный список. [1, 1, 2, 3, 4, 4, 5, 1]
+
+input
+Enter an element: Sorbon
+Index: 3
+output
+[1, 1, 2, "Sorbon", 3, 4, 4, 5, 1]
+
+Ҷавоб:
+_______________________________________
+my_list= [1, 1, 2, 3, 4, 4, 5, 1]     |
+my_list1=[]                           |   
+strg=input("Enter an element --> ")   |    
+index=int(input("index --> "))        |    
+my_list.insert(index,strg)            |    
+for i in range(len(my_list)):         |    
+    my_list1.append(my_list[i])       |         
+print(my_list1)                       |   
+_______________________________________   
+
+2 Task
+Write a Python program to convert a list of multiple integers into a single integer. 
+Напишите программу на Python для преобразования списка из нескольких целых чисел в одно целое число.
+
+input
+Sample list: [11, 33, 50]
+output
+Expected Output: 113350
+
+Ҷавоб:
+_______________________________
+my_list=input().split()       |     
+strg=""                       |   
+for i in range(len(my_list)): |        
+    strg+=my_list[i]          |     
+print(strg)                   |      
+______________________________|
+
+3 Task
+Create a python program to read line number N from the following file. Создайте программу
+Python для чтения строки номер N из следующего файла. my_file.txt -> Hello world TEST Tajikistan An apple
+
+input
+3
+otput
+Tajikistan
+
+Ҷавоб:
+
+_______________________________________
+def read_line(num_line):               |          
+    with open("file.txt","r") as file: |         
+        for i in range (num_line - 0): |         
+            file.readable()            |         
+            line=file.readline()       |        
+        return line                    |    
+                                       |        
+num_line=int(input())                  |              
+                                       |       
+print(read_line(num_line))             |      
+________________________________________
+
+4 Task
+Create a python program to generate a random password of the specified length. 
+Создайте программу Python для создания случайного пароля указанной длины.
+
+input
+Enter the desired password length: 12
+output
+Generated password: Xy#7pLm$9oR5
+
+_____________________________________________________________________________
+import random                                                                |    
+txt='qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890/_@#$%'   |    
+len_password = int(input())                                                  |       
+pasword=''.join(random.sample(txt,len_password))                             |    
+print(pasword)                                                               |      
+______________________________________________________________________________
+
+
+5 Task
+Build a program that converts currency from one denomination to another. Создайте программу,
+которая конвертирует валюту одного номинала в другой.
+
+input
+Enter the amount in TJS: 1
+output
+Rub -> 0.1193
+USD -> 10.8656
+EUR -> 11.7837
+UZ_SUM -> 0.0856
+
+Ҷавоб:
+__________________________________________________
+                                                  |        
+tjs=int(input("Enter the amount in TJS --> "))    |        
+print(f"Rub -> {tjs*12.0}")                       |         
+print(f"USD -> {tjs*0.11}")                       |           
+print(f"EUR -> {tjs*0.105}")                      |           
+print(f"UZ_SUM -> {tjs*1000.0}")                  |            
+__________________________________________________|
+
+6 Task
+Given a natural number N, find the sum of the numbers 1+1/1!+1/2!+1/3!+...+1/N!.
+The number of actions should be proportional to N. По данному натуральному числу N найдите сумму чисел 1+1/1!+1/2!+1/3!+...+1/N!. 
+Количество действий должно быть пропорционально N.
+
+input
+1
+output
+2
+
+
+
+7 Task
+Write a Python program for binary search of an ordered list. Напишите программу на Python для двоичного поиска в упорядоченном списке.
+
+Example
+Ordered_binary_Search([0, 1, 3, 8, 14, 18, 19, 34, 52], 3) -> True
+Ordered_binary_Search([0, 1, 3, 8, 14, 18, 19, 34, 52], 17) -> False
+____________________________________________________________________________________
+def binary_poisk(arr, num):                                                        |                                                 
+    a = 0                                                                          |                             
+    f = len(arr) - 1                                                               |                                        
+    while a <= f:                                                                  |                                     
+        mid = (a + f) // 2                                                         |                                              
+        if arr[mid] == num:                                                        |                                               
+            return True                                                            |                                           
+        elif arr[mid] < num:                                                       |                                                
+            a = mid + 1                                                            |                                           
+        else:                                                                      |                                 
+            f = mid - 1                                                            |                                           
+                                                                                   |                        
+    return False                                                                   |                                    
+                                                                                   |                                                                                                                           
+                                                                                   |                                                                                                                           
+                                                                                   |                    
+my_list=input().split()                                                            |                                           
+num=int(input())                                                                   |                                    
+print(binary_poisk(my_list,num))                                                   |                                                    
+                                                                                   |                    
+____________________________________________________________________________________
+
+8 Task
+Write a Python program to replace each character of a word of length five and more with a hash character (#). Напишите программу на Python, заменяющую каждый символ слова длиной пять и более символом решетки (#).
+
+input
+Count the lowercase letters in the said list of words:
+output
+##### the ######### ####### in the said list of ######
+
+Ҷавоб:
+______________________________________________________________________
+string = "Count the lowercase letters in the said list of words"      | 
+words = string.split()                                                |                               
+result = []                                                           |                    
+                                                                      |         
+for word in words:                                                    |                           
+    if len(word) >= 5:                                                |                               
+        word = '#' * len(word)                                        |                                       
+    result.append(word)                                               |                                
+                                                                      |         
+output = ' '.join(result)                                             |                                  
+print(output)                                                         |                      
+______________________________________________________________________|
+
+9 Task
+Write a Python script to print a dictionary where the keys are numbers between 1 and N (both included) and the values are the square of the keys.
+Напишите сценарий Python для печати словаря, в котором ключами являются числа от 1 до N (оба включены), а значениями являются квадраты ключей.
+
+input
+15
+output
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100, 11: 121, 12: 144, 13: 169, 14: 196, 15: 225}
+
+Ҷавоб:
+______________________________________
+def function(n):                      |        
+    my_dict = {}                      |         
+    for num in range(1, n+1):         |                   
+        my_dict[num] = num ** 2       |              
+                                      |      
+    return my_dict                    |       
+                                      |         
+n = int(input())                      |       
+my_dict = function(n)                 |                  
+print(my_dict)                        |           
+______________________________________|
+
+
+10 Task
+Given a list of elements of any data types. Create a Python program to separate elements by their 
+types and save them into a new dictionary. The keys of a dictionary must be of a data type, and its element must be data belonging to
+that type. Дан список элементов любых типов данных. Создайте программу Python для разделения элементов по их типам и сохранения их в новый словарь. Ключи словаря должны иметь тип данных, а его элементом должны быть данные, принадлежащие этому типу.
++
+input
+1 hello True 12 Muhammad
+output
+{"int": [1,12], "str": ["hello", "Muhammad"], "bool": [True]}
